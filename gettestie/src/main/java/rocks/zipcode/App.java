@@ -1,4 +1,4 @@
-package rocks.zipcode;
+package main.java.rocks.zipcode;
 
 /**
  * Hello world!
