@@ -1,4 +1,4 @@
-package main.java.rocks.zipcode;
+package java.rocks.zipcode;
 
 public class Address {
     private String street;

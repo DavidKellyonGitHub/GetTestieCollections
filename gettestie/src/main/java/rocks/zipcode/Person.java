@@ -1,6 +1,8 @@
 package main.java.rocks.zipcode;
 
 
+import java.rocks.zipcode.Address;
+
 public class Person {
     private String name;
     private int yearOfBirth;

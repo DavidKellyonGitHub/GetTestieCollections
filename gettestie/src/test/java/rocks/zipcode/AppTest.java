@@ -1,4 +1,4 @@
-package java.rocks.zipcode;
+package rocks.zipcode;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -16,16 +16,22 @@ public class AppTest {
 
     @Test
     public void ArrayListTest(){
-        ArrayList<Integer> testList = new ArrayList<Integer>(Arrays.asList(2,5,3,6,7,6,4));
-        testList.clear();
-        Assert.assertTrue(testList.isEmpty());
-
-
-
+        ArrayList<Integer> actual = new ArrayList<Integer>(Arrays.asList(2,5,3,6,7,6,4));
+        Collections.sort(actual);
+        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(2,3,4,5,6,6,7));
+        Assert.assertEquals(expected,actual);
         }
 
-
-    public void HashMapTest(){}
+    @Test
+    public void HashMapTest(){
+    HashMap<Integer, Integer> testMap= new HashMap<>();
+    testMap.put(2,3);
+    testMap.put(2,5);
+    testMap.put(2,6);
+    testMap.put(2,7);
+    String expected = "2";
+    Assert.assertTrue(testMap.containsKey(2));
+    }
 
     public void LinkedListTest(){}
 
