@@ -77,14 +77,44 @@ public class AppTest {
         Assert.assertEquals(expected,actual);
     }
 
-    public void StackTest(){}
+    @Test
+    public void StackTest(){
+        Stack<Integer> testStack = new Stack<>();
+        testStack.push(1);
+        testStack.push(2);
+        testStack.push(3);
+        testStack.push(4);
+        testStack.push(5);
+        testStack.pop();
+        Assert.assertFalse(testStack.isEmpty());
+        Integer expected = 4;
+        Integer actual = testStack.peek();
+        Assert.assertEquals(expected,actual);
+    }
 
-    public void TreeSetTest(){}
+    @Test
+    public void TreeSetTest(){
+        TreeSet<Integer> testSet = new TreeSet<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
+        testSet.add(8);
+        Integer actual = testSet.first();
+        Integer expected = 1;
+        Assert.assertEquals(expected,actual);
 
-    public void PriorityQueueTest(){}
+    }
 
-    public void Comparable(){}
+    @Test
+    public void PriorityQueueTest(){
+        PriorityQueue<Integer> testPq =  new PriorityQueue<>(Arrays.asList(1,2,3,4,5));
+        Integer expected = 5;
+        Integer actual = testPq.size();
+        Assert.assertEquals(expected,actual);
+        // attempted to add null and failed due to null pointer
+    }
 
+    public void Comparable(){
+
+
+    }
 
 
 

@@ -42,8 +42,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.TreeMapTest">
-    <configuration name="AppTest.ArrayDequeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AppTest.PriorityQueueTest">
+    <configuration name="AppTest.PriorityQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gettestie" />
       <extension name="coverage">
         <pattern>
@@ -53,14 +53,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="rocks.zipcode" />
       <option name="MAIN_CLASS_NAME" value="rocks.zipcode.AppTest" />
-      <option name="METHOD_NAME" value="ArrayDequeTest" />
+      <option name="METHOD_NAME" value="PriorityQueueTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.HashMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.StackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gettestie" />
       <extension name="coverage">
         <pattern>
@@ -70,7 +70,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="rocks.zipcode" />
       <option name="MAIN_CLASS_NAME" value="rocks.zipcode.AppTest" />
-      <option name="METHOD_NAME" value="HashMapTest" />
+      <option name="METHOD_NAME" value="StackTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -88,6 +88,23 @@
       <option name="PACKAGE_NAME" value="rocks.zipcode" />
       <option name="MAIN_CLASS_NAME" value="rocks.zipcode.AppTest" />
       <option name="METHOD_NAME" value="TreeMapTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.TreeSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gettestie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rocks.zipcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rocks.zipcode" />
+      <option name="MAIN_CLASS_NAME" value="rocks.zipcode.AppTest" />
+      <option name="METHOD_NAME" value="TreeSetTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -120,23 +137,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rocks.zipcode in gettestie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gettestie" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rocks.zipcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rocks.zipcode" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -162,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.PriorityQueueTest" />
+        <item itemvalue="JUnit.AppTest.TreeSetTest" />
+        <item itemvalue="JUnit.AppTest.StackTest" />
         <item itemvalue="JUnit.AppTest.TreeMapTest" />
         <item itemvalue="JUnit.AppTest.VectorTest" />
-        <item itemvalue="JUnit.AppTest.ArrayDequeTest" />
-        <item itemvalue="JUnit.AppTest.HashMapTest" />
-        <item itemvalue="JUnit.rocks.zipcode in gettestie" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +184,7 @@
       <workItem from="1583014320696" duration="3000" />
       <workItem from="1583019247184" duration="299000" />
       <workItem from="1583024115097" duration="1128000" />
-      <workItem from="1583098392348" duration="4594000" />
+      <workItem from="1583098392348" duration="5762000" />
     </task>
     <servers />
   </component>
@@ -204,22 +204,22 @@
       <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
     <state x="812" y="-622" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1280.709/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1583012870745" />
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1583103742126">
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1583104805973">
       <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1280.709/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1583103742126" />
-    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1583103742125">
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1280.709/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1583104805973" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1583104805972">
       <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1280.709/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1583103742125" />
-    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1583103742124">
+    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1280.709/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1583104805972" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1583104805971">
       <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1280.709/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1583103742124" />
-    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1583103742126">
+    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1280.709/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1583104805971" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1583104805972">
       <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1280.709/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1583103742126" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1280.709/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1583104805972" />
     <state width="1878" height="357" key="GridCell.Tab.1.bottom" timestamp="1583103730772">
       <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
