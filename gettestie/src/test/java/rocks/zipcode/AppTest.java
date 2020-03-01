@@ -24,16 +24,21 @@ public class AppTest {
 
     @Test
     public void HashMapTest(){
-    HashMap<Integer, Integer> testMap= new HashMap<>();
-    testMap.put(2,3);
-    testMap.put(2,5);
-    testMap.put(2,6);
-    testMap.put(2,7);
-    String expected = "2";
-    Assert.assertTrue(testMap.containsKey(2));
+        HashMap<Integer, Integer> testMap= new HashMap<>();
+        testMap.put(2,3);
+        testMap.put(2,5);
+        testMap.put(2,6);
+        testMap.put(2,7);
+        String expected = "2";
+        Assert.assertTrue(testMap.containsKey(2));
     }
 
-    public void LinkedListTest(){}
+    @Test
+    public void LinkedListTest(){
+        LinkedList<Integer> testLinkList = new LinkedList<>();
+        testLinkList.addAll(Arrays.asList(5,6,4,7,3,7));
+        Assert.assertTrue(testLinkList.listIterator(1).hasNext());
+    }
 
     public void ArrayDequeTest(){}
 
