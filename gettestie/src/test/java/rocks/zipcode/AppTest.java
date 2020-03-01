@@ -40,11 +40,42 @@ public class AppTest {
         Assert.assertTrue(testLinkList.listIterator(1).hasNext());
     }
 
-    public void ArrayDequeTest(){}
+    @Test
+    public void ArrayDequeTest(){
+        ArrayDeque<Integer> testAd= new ArrayDeque<>();
+        testAd.offerLast(1);
+        testAd.offerLast(2);
+        Integer expected = 2;
+        Integer actual = testAd.peekLast();
+        Assert.assertEquals(expected,actual);
 
-    public void VectorTest(){}
+    }
 
-    public void TreeMapTest(){}
+    @Test
+    public void VectorTest(){
+        Vector<Integer> testVector = new Vector<>();
+        testVector.setSize(10);
+        testVector.add(1);
+        Integer expected = 11;
+        Integer actual = testVector.size();
+        Assert.assertEquals(expected,actual);
+
+    }
+    @Test
+    public void TreeMapTest(){
+        TreeMap<Integer, Integer> testTree = new TreeMap<>();
+        testTree.put(1,2);
+        testTree.put(3,4);
+        testTree.put(5,6);
+        Set exSet = testTree.descendingKeySet();
+        Iterator exIterator = exSet.iterator();
+        Integer actual = 0;
+        while(exIterator.hasNext()){
+            actual = (Integer) exIterator.next();
+        }
+        Integer expected = 1;
+        Assert.assertEquals(expected,actual);
+    }
 
     public void StackTest(){}
 
